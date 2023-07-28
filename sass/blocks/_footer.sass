@@ -1,0 +1,39 @@
+.footer
+   background-image: url(../img/future-bg.png)
+   background-repeat: no-repeat
+   max-height: 100%
+   background-position: center
+   &-wrapper
+      display: flex
+      justify-content: flex-start
+      align-items: center
+   &-navigation
+      display: flex
+      color: #ffffff
+      font-family: Cuprum
+      font-size: 14px
+      font-weight: 400
+      font-style: normal
+      letter-spacing: 0.7px
+      line-height: 27px
+      text-align: justifyLeft
+      text-decoration: underline
+      text-transform: uppercase
+   &-list
+      margin-right: 72px
+   &__item
+      list-style: none
+      position: relative
+      &::after
+         content: ''
+         position: absolute
+         left: 120%
+         top: 50%
+         right: 0
+         background-image: url(../img/footer-arrow.svg)
+         background-repeat: no-repeat
+         width: 5px
+         height: 6px
+         transform: translateY(-50%)
+   &__link
+      margin-left: 45px

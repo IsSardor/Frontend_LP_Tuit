@@ -1,0 +1,152 @@
+.header
+   background-image: url(../img/header/header-bg.png)
+   background-repeat: repeat-x
+   min-height: 160px
+   &-top
+      display: flex
+      justify-content: space-between
+      align-items: start
+      position: relative
+   &__title
+      color: #ddfbff
+      font-family: Impact, sans-serif
+      font-size: 22px
+      font-weight: 400
+      font-style: normal
+      line-height: normal
+      text-transform: uppercase
+      letter-spacing: 1.1px
+      margin: 10px 0 7px
+      filter: drop-shadow(0 4px 4px #16131380)
+   &-links
+      display: flex
+   &__link
+      position: relative
+      justify-content: center
+      font-family: Tahoma, sans-serif
+      font-size: 9px
+      font-weight: 400
+      color: #ffffff
+      font-style: normal
+      line-height: normal
+      text-transform: uppercase
+      padding: 20px 28px 5px 8px
+      &--uz
+         background-image: linear-gradient(to top, #478109 0%, #65af29 100%)
+         border-bottom-left-radius: 5px
+         &:after
+            content: ''
+            position: absolute
+            top: 18px
+            right: 4px
+            bottom: 2px
+            background-image: url(../img/header/language-uz.svg)
+            background-repeat: no-repeat
+            width: 17px
+            height: 16px
+      &--ru
+         background-image: linear-gradient(to top, #126abb 0%, #3d9dee 100%)
+         border-bottom-right-radius: 5px
+         &:after
+            content: ''
+            position: absolute
+            top: 18px
+            right: 4px
+            bottom: 2px
+            background-image: url(../img/header/language-ru.svg)
+            background-repeat: no-repeat
+            width: 17px
+            height: 16px
+   &-logotype
+      display: flex
+      align-items: center
+      justify-content: space-between
+      align-items: center
+      text-decoration: none
+      color: $primary
+      max-width: 30%
+      padding: 6px 0
+   &__logo
+      margin-right: 10px
+   &__text
+      font-size: 16px
+      text-transform: uppercase
+      color: $primary
+   &-bottom
+      background-color: #f1f1f1
+      height: 90px
+      background-image: linear-gradient(to top, #e3e3e3 0%, #fcfcfc 100%)
+      box-shadow: -10px 2px 5px rgba(0,0,0,0.5)
+   &-navbar
+      width: 100%
+.navbar
+   display: flex
+   justify-content: space-between
+   align-items: center
+   &-menu
+      display: flex
+      justify-content: space-between
+      width: 100%
+      padding: 0
+      margin: 0
+      & li
+         &:hover
+            background-image: linear-gradient(to top, #418ec6 0%, #77c7fc 100%)
+            color: #fff
+      &__item
+         position: relative
+         list-style: none
+         cursor: pointer
+         padding: 35.5px 10px
+         &:hover .navbar-submenu
+            transform: scaleY(1)
+            opacity: 0.9
+         &:not(:first-child)::after
+            content: ''
+            position: absolute
+            left: 45%
+            top: 150%
+            background-image: url(../img/header/arrow-submenu.svg)
+            background-repeat: no-repeat
+            width: 6px
+            height: 5px
+      &__link
+         font-family: Cuprum, sans-serif
+         font-size: 16px
+         font-weight: 400
+         font-style: normal
+         line-height: normal
+         text-transform: uppercase
+         text-decoration: none
+         letter-spacing: 0.8px
+         color: inherit
+   &-submenu
+      display: block
+      min-width: 150px
+      margin: 0
+      padding: 0
+      float: left
+      box-shadow: -1px 2px 2px rgba(93, 93, 93, 0.45)
+      position: absolute
+      left: 0
+      top: 100%
+      width: 100%
+      z-index: 10
+      transform: scaleY(0)
+      transform-origin: 0 0
+      transition: 0.5s
+      background: #4895cd
+      &__item
+         list-style: none
+         padding: 15px 15px
+         font-size: 12px
+         font-weight: 400
+         font-style: normal
+         letter-spacing: normal
+         line-height: normal
+         text-align: justifyLeft
+         text-transform: uppercase
+      &__link
+         display: block
+         text-decoration: none
+         color: inherit
